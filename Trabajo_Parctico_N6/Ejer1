@@ -1,0 +1,16 @@
+Algoritmo sin_titulo
+	Definir producto, iva, recargo, descuento Como Real;
+	
+	Escribir "Ingrese el precio base del producto: ";
+	Leer producto;
+	
+	iva = ((producto * 21) / 100) + producto;
+	Escribir "El precio con el IVA es: $", iva;
+	
+	recargo = ((iva * 8) / 100) + iva;
+	Escribir "El precio con el recargo del 8% es de: $", recargo;
+	
+	descuento = recargo - ((recargo * 5) / 100);
+	Escribir "El precio con el descuento del 5% es de: $", descuento;
+	
+FinAlgoritmo
